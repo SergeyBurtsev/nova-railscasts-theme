@@ -1,0 +1,8 @@
+{
+    "identifier": "com.burtsev.nova-railscasts-theme",
+    "name": "RailsCasts Theme",
+    "organization": "Sergey Burtsev",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["themes"]
+}
