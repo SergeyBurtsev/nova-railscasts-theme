@@ -2,7 +2,7 @@
     "identifier": "com.burtsev.nova-railscasts-theme",
     "name": "RailsCasts Theme",
     "organization": "Sergey Burtsev",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Dark theme from the famous Ruby on Rails screencasts",
     "version": "1.0",
     "categories": ["themes"]
 }

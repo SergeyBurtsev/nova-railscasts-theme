@@ -1,0 +1,8 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "sass --sourcemap=none style.scss Themes\/RailsCasts\\ Theme.css"
+    }
+  }
+}

@@ -1,0 +1,258 @@
+$text-color: #E6E1DC;
+$brown: #CC7833;
+$orange: #FFC66D;
+$blue: #6D9CBE;
+$red: #DA4939;
+$green: #A5C261;
+$dark-green: #519F50;
+
+meta {
+    -theme-interface-style: dark;
+    -theme-vibrancy: none;
+    -theme-accent-color: auto;
+
+    &.window {
+        border-color: hsla(0, 0%, 100%, 0.1);
+    }
+
+    &.titlebar {
+        color: hsl(210, 17%, 76%);
+        border-color: hsla(0, 0%, 0%, 0.6);
+
+        &.inactive {}
+    }
+
+    &.button {
+        background: linear-gradient(hsl(210, 5%, 32%), hsl(210, 5%, 25%));
+        border: linear-gradient(hsl(210, 5%, 17%), hsl(210, 5%, 13%));
+        color: white;
+
+        &.highlighted {
+            background: linear-gradient(hsl(210, 5%, 42%), hsl(210, 5%, 34%));
+            color: white;
+        }
+
+        &.selected {
+            color: white;
+        }
+
+        &.highlighted.selected {
+            color: white;
+        }
+
+        &.disabled {}
+    }
+
+    &.textfield {
+        background-color: hsl(210, 5%, 13%);
+        border-color: hsl(210, 5%, 23%);
+
+        &.highlighted {
+            background-color: hsl(210, 5%, 10%);
+            border-color: hsl(210, 5%, 23%);
+        }
+    }
+
+    &.document {
+        background-color: #2B2B2B;
+        border-color: #75715E;
+
+        &.button {
+            background: linear-gradient(hsl(210, 5%, 25%), hsl(210, 5%, 21%));
+            border: linear-gradient(hsl(210, 5%, 11%), hsl(210, 5%, 8%));
+
+            &.disabled {
+                background: linear-gradient(hsla(220, 5%, 25%, 0.3), hsla(220, 5%, 21%, 0.3));
+            }
+
+            &.highlighted {
+                background: linear-gradient(hsl(210, 5%, 34%), hsl(210, 5%, 30%));
+            }
+        }
+
+        &.textfield {
+            background-color: hsl(210, 5%, 10%);
+            border-color: hsl(210, 5%, 19%);
+
+            &.highlighted {
+                background-color: hsl(210, 5%, 10%);
+                border-color: hsl(210, 5%, 19%);
+            }
+        }
+    }
+
+    &.text {
+        color: $text-color;
+
+        &.invisible {
+            color: #404040;
+        }
+
+        &.selected {
+            background-color: #545D74;
+        }
+    }
+
+    &.cursor {
+        background-color: #333435;
+    }
+
+    &.indentguide {
+        border-color: hsla(220, 5%, 48%, 0.2);
+    }
+
+    &.gutter {
+        background-color: #45433E;
+        color: #858179;
+
+        &.selected {
+            background-color: #3B3935;
+            color: #BFBBB0;
+        }
+    }
+}
+
+comment {
+    font-style: italic;
+    color: #BC9458;
+}
+
+bracket {
+    color: $text-color;
+}
+
+operator {
+    color: $brown;
+}
+
+invalid {
+    background-color: #990000;
+    color: #FFFFFF;
+}
+
+value {
+    &.number {
+        color: $green;
+    }
+
+    &.boolean,
+    &.null,
+    &.symbol,
+    {
+        color: $blue;
+    }
+}
+
+identifier {
+    &.argument {
+        &.name {
+            color: $text-color;
+        }
+    }
+    &.constant {
+        &.name {
+            color: $red;
+        }
+    }
+    &.variable {
+        color: #D0D0FF;
+    }
+    &.core {
+        &.method {
+            color: $brown;
+        }
+    }
+    &.method {
+        &.name {
+            color: $orange;
+        }
+    }
+    &.type {
+        &.superclass {
+            color: $red;
+        }
+    }
+    &.module {
+        color: $red;
+        color: $text-color;
+    }
+    &.class {
+        &.type {
+            &.name {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+definition {
+    &.class-method {
+        color: $orange;
+    }
+}
+
+keyword {
+    &.construct {
+        color: $brown;
+    }
+    &.self {
+        color: $blue;
+    }
+}
+
+string {
+    color: $green;
+
+    &-template {
+        &.delimiter {
+            color: $green;
+        }
+    }
+
+    &-template-block {
+        color: $dark-green;
+    }
+
+    &.regex {
+        color: $dark-green;
+    }
+}
+
+collection {
+    &.tuple {
+        color: $text-color;
+    }
+}
+
+tag {
+    color: $orange;
+
+    &.attribute {
+        &.value {
+            color: $green;
+        }
+    }
+
+    &.framework {
+        color: $text-color;
+    }
+}
+
+style {
+    &.selector {
+        color: $orange;
+    }
+    &.attribute {
+        &.name {
+            color: $blue;
+        }
+    }
+    &.value {
+        color: $text-color;
+
+        &.function {
+            color: $red;
+        }
+    }
+}
+
